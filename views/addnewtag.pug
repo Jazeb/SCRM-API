@@ -1,0 +1,10 @@
+extends layout
+
+block content
+ hr
+ div
+ .container
+  form(method="post", action="/addnewtag/addTag")
+   label Enter Tag name
+   input.form-control(type="text", name="tagName", id="tagName" required='')
+   button.btn.btn-outline-success.my-2.my-sm-0(type='submit' value='Submit') Submit

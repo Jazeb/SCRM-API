@@ -1,0 +1,22 @@
+extends layout
+
+block content
+ hr
+ div
+ .container
+  form(method="post", action="/addpoints")
+   label Enter Open ID:
+   input.form-control(type="text", name="oid", id="oid", required='')
+
+   label Enter Points:
+   input.form-control(type="text", name="points", id="points", required='')
+
+   label Enter Flag:
+   input.form-control(type="text", name="flag", id="flag", required='')
+
+   label Enter Type:
+   input.form-control(type="text", name="type", id="type", required='')
+
+   label Enter Content:
+   input.form-control(type="text", name="content", id="content", required='')
+   button.btn.btn-outline-success.my-2.my-sm-0(type='submit' value='Submit') Submit
